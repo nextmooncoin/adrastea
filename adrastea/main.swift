@@ -1,6 +1,12 @@
 //  Copyright © 2018 nextmooncoin. All rights reserved.
 
 import Foundation
+import Accounts
+import SwifterMac
 
-print("Hello, World!")
+class DummyTwitterAccount: ACAccount {
+    
+}
+
+let _ = Swifter(account: DummyTwitterAccount())
 

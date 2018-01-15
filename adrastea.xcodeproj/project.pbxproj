@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0AA5EFC8200CBFF400512ADF /* SwifterMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA5EFC7200CBFF400512ADF /* SwifterMac.framework */; };
 		68F61E2B200B4D4A0034E71F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F61E2A200B4D4A0034E71F /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0AA5EFC7200CBFF400512ADF /* SwifterMac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwifterMac.framework; path = Carthage/Build/Mac/SwifterMac.framework; sourceTree = "<group>"; };
+		0AA5EFC9200CC7A300512ADF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		68F61E27200B4D4A0034E71F /* adrastea */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = adrastea; sourceTree = BUILT_PRODUCTS_DIR; };
 		68F61E2A200B4D4A0034E71F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -32,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AA5EFC8200CBFF400512ADF /* SwifterMac.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0AA5EFC6200CBFF400512ADF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0AA5EFC7200CBFF400512ADF /* SwifterMac.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		68F61E1E200B4D4A0034E71F = {
 			isa = PBXGroup;
 			children = (
+				0AA5EFC9200CC7A300512ADF /* README.md */,
 				68F61E29200B4D4A0034E71F /* adrastea */,
 				68F61E28200B4D4A0034E71F /* Products */,
+				0AA5EFC6200CBFF400512ADF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -237,7 +251,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/Mac ${DT_TOOLCHAIN_DIR}/usr/lib/swift/macosx/";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
 				SWIFT_VERSION = 4.0;
@@ -248,7 +267,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/Mac ${DT_TOOLCHAIN_DIR}/usr/lib/swift/macosx/";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
 				SWIFT_VERSION = 4.0;
