@@ -1,12 +1,7 @@
 //  Copyright © 2018 nextmooncoin. All rights reserved.
 
 import Foundation
-import Accounts
-import SwifterMac
+import AdrasteaKit
 
-class DummyTwitterAccount: ACAccount {
-    
-}
-
-let _ = Swifter(account: DummyTwitterAccount())
-
+let fakeAdrastea = FakeAdrastea()
+fakeAdrastea.run()

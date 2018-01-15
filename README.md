@@ -2,9 +2,12 @@
 
 ## before building
 
-run
+run the following command to fetch and build dependencies
 ```
 carthage update --platform macos --cache-builds
 ```
-latest release Carthage.pk can be found [here](https://github.com/Carthage/Carthage/releases)
+latest release Carthage.pkg can be found [here](https://github.com/Carthage/Carthage/releases)
 
+## running tests
+
+all tests should pass when running the unit tests in AdrasteaKit. run the unit tests by switching to the AdrasteaKit target and running Command-U.
