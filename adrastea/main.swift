@@ -4,9 +4,9 @@ import Foundation
 import Accounts
 import SwifterMac
 
-class FakeTwitterAccount: ACAccount {
+class DummyTwitterAccount: ACAccount {
     
 }
 
-let _ = Swifter(account: FakeTwitterAccount())
+let _ = Swifter(account: DummyTwitterAccount())
 
