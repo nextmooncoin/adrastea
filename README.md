@@ -8,3 +8,6 @@ carthage update --platform macos --cache-builds
 ```
 latest release Carthage.pk can be found [here](https://github.com/Carthage/Carthage/releases)
 
+## running tests
+
+run the unit tests in AdrasteaKit by switching to the AdrasteaKit target and running Command-U
