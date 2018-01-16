@@ -12,6 +12,30 @@ public class Adrastea  {
     }
     
     public func run() {
-        print("running Adrastea")
+        let serialQueue = DispatchQueue(label: "com.nextmooncoin.adrastea", qos: .default)
+        
+        serialQueue.sync() {
+            self.twitterTimeline()
+        }
+        
+        serialQueue.sync() {
+            self.analyzeTwitterTimeline()
+        }
+        
+        serialQueue.sync() {
+            self.tweetResults()
+        }
+    }
+    
+    private func twitterTimeline() {
+        print("obtain twitter timeline")
+    }
+    
+    private func analyzeTwitterTimeline() {
+        print("analyze twitter timeline")
+    }
+    
+    private func tweetResults() {
+        print("tweet results")
     }
 }
