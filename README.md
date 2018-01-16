@@ -8,6 +8,6 @@ carthage update --platform macos --cache-builds
 ```
 latest release Carthage.pkg can be found [here](https://github.com/Carthage/Carthage/releases)
 
-## running tests
+## AdrasteaKit
 
-all tests should pass when running the unit tests in AdrasteaKit. run the unit tests by switching to the AdrasteaKit target and running Command-U.
+all functionalities of adrastea and tests will be implemented in AdrasteaKit. 
